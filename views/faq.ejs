@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/faq.css">
+</head>
+<body>
+    <header class="header">
+        <div href="/img/logo.jpg" class="logo"></div>
+        <div class="navbar">
+            <a href="/">Home</a>
+            <a href="/areas">Areas</a>
+            <a href="/rides">Rides</a>
+            <a href="/faq">FAQ</a>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </header>
+    <div class="wrapper">
+        <p>What's on your mind </p>
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq active">
+            <button class="accordion">
+                what is Croco-Island
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Croco-Island is one of the best parks known world wide,
+                    it containes numerous areas to discover and understand
+                    more about corodiles and their habitats.Not to forget
+                    it has corodolie theme rides to enjoy and conquer your 
+                    fear.
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                what is Croco-Island
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Croco-Island is one of the best parks known world wide,
+                    it containes numerous areas to discover and understand
+                    more about corodiles and their habitats.Not to forget
+                    it has corodolie theme rides to enjoy and conquer your 
+                    fear.
+                </p>
+            </div>
+        </div>
+        <div class="faq active">
+            <button class="accordion">
+                what is Croco-Island
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Croco-Island is one of the best parks known world wide,
+                    it containes numerous areas to discover and understand
+                    more about corodiles and their habitats.Not to forget
+                    it has corodolie theme rides to enjoy and conquer your 
+                    fear.
+                </p>
+            </div>
+        </div>
+        <div class="faq active">
+            <button class="accordion">
+                what is Croco-Island
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Croco-Island is one of the best parks known world wide,
+                    it containes numerous areas to discover and understand
+                    more about corodiles and their habitats.Not to forget
+                    it has corodolie theme rides to enjoy and conquer your 
+                    fear.
+                </p>
+            </div>
+        </div>
+        <div class="faq active">
+            <button class="accordion">
+                what is Croco-Island
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Croco-Island is one of the best parks known world wide,
+                    it containes numerous areas to discover and understand
+                    more about corodiles and their habitats.Not to forget
+                    it has corodolie theme rides to enjoy and conquer your 
+                    fear.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+<footer class="footer">
+    <p>© 2024 Your Startup | All Rights Reserved | <a href="mailto:info@yourstartup.com">info@yourstartup.com</a></p>
+</footer>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for(i = 0; i < acc.length ; i++){
+        acc[i].addEventListener("click", function(){
+            this.classList.toggle("active");
+            this.parentElement.classList.toggle("active");
+
+            var pannel = this.nextElementSibling;
+
+            if(pannel.style.display === "block") {
+                pannel.style.display = "none"
+            } else {
+                pannel.style.display = "block"
+            }
+        });
+    }
+</script>
+</body>
+</html>

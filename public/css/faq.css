@@ -1,16 +1,125 @@
-/* Unique styles for the FAQ page */
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-.faq h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 2rem;
+/* Universal base styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto" sans-serif; 
 }
 
-.faq-item {
-    margin-bottom: 2rem;
+/* Header styling */
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2vh 10vw; 
+    background: #b3e0e3; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: absolute; 
 }
 
-.faq-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+/* Logo styling */
+.logo {
+    display: block;
+    width: 12vh; 
+    height: 12vh; 
+    background: url('/img/logo.jpg') no-repeat center center;
+    background-size: cover; 
+    border-radius: 50%; 
+    text-indent: -9999px; 
+}
+
+/* Navigation link styles */
+.navbar a {
+    font-size: 2.25vh; 
+    color: #00796b; 
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 4.5vh; 
+    padding: 1.25vh 1.5vh;
+    transition: color 0.3s;
+    font-family: "Poppins" sans-serif;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #004d40; 
+}
+
+
+.wrapper {
+    max-width: 75vw; 
+    margin: auto;
+    padding: 2vh 2vw; 
+    text-align: center; 
+    padding-bottom: 5vh;
+}
+
+.wrapper p {
+    margin-top: 150px;
+}
+
+.wrapper h3 {
+    margin-top: 50px;
+}
+
+.wrapper  h3 {
+    letter-spacing: 0.2vh; 
+}
+
+/* Accordion component styles */
+.accordion {
+    background-color: white; 
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1.8vh; 
+    width: 100%;
+    padding: 3vh 3vw; 
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.2); 
+}
+
+.accordion i {
+    font-size: 1.6rem;
+}
+
+.active,
+.accordion:hover {
+    background-color: #f1f7f5;
+}
+
+.pannel {
+    padding: 5vh;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
+    justify-content: center;
+}
+
+.pannel p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.faq {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+
+.faq.active {
+    border: none;
 }
