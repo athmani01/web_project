@@ -56,21 +56,19 @@ app.get('/contact', (req, res) => {
     res.render('contact', {title: "Contact Us"});
 });
 
-app.post('/contact', (req, res) => {
-        const { name, email, message } = req.body;
-        const sql = `INSERT INTO messages (name, email, message) VALUES (?, ?, ?)`;
-        db.run(sql, [name, email, message], function(err) {
-            if (err) {
-                console.error(err.message);
-                res.status(500).json({ status: "error", message: "Failed to save your message" }); 
-                return;
-            }
-            console.log(`A message has been added with rowid ${this.lastID}`);
-    
-            // Redirect back to the contact page with a success indicator
-            res.redirect('/contact?success=true'); 
-        });
+app.post('/submit-form', (req, res) => {
+    const { name, email, message } = req.body;
+    const sql = `INSERT INTO messages (name, email, message) VALUES (?, ?, ?)`;
+    db.run(sql, [name, email, message], function(err) {
+        if (err) {
+            console.error(err.message);
+            res.status(500).send("Failed to save message, please try again!");
+            return;
+        }
+        console.log(`A message has been added with rowid ${this.lastID}`);
+        res.send('Thank you for your message!');
     });
+});
 
 // Start server
 app.listen(port, () => {
