@@ -66,7 +66,6 @@ app.post('/submit-form', (req, res) => {
             return;
         }
         console.log(`A message has been added with rowid ${this.lastID}`);
-        res.send('Thank you for your message!');
     });
 });
 
