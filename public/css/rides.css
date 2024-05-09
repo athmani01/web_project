@@ -1,0 +1,17 @@
+/* Unique styles for the Rides/Attractions page */
+
+.rides-attractions h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.rides-attractions ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    text-align: center;
+}
+
+.rides-attractions ul li {
+    margin-bottom: 0.5rem;
+}

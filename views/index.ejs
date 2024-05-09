@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="/img/logo.jpg" class="logo"></a>
+        <nav class="navbar">
+            <a class="active" href="/">Home</a>
+            <a href="/areas">Areas</a>
+            <a href="/rides">Rides</a>
+            <a href="/faq">FAQ</a>
+            <a href="/contact">Contact Us</a>
+        </nav>
+    </header>
+
+<section class="home">
+    <div class="home-content">
+        <h1>Discover Croco-Island</h1>
+        <h3>Find the best crocodile inspired rides.</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Nisi sint, aliquam placeat doloribus asperiores, quo, 
+            iure nesciunt vero sequi accusamus cupiditate adipisci eveniet 
+            architecto dignissimos quae similique nihil quod facere?</p>
+        <div class="btn-box">
+            <a href="#" onclick="openPopup(); return false;">Book Now</a>
+            <a href="#">Buy ticket</a>
+        </div>
+        <div class="popup" id="popup">
+            <img src="/img/404-tick.png" alt="Confirmation Tick">
+            <h2>Thank you!</h2>
+            <p>Your booking has been successful</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2024 Your Startup | All Rights Reserved | <a href="mailto:info@yourstartup.com">info@yourstartup.com</a></p>
+</footer>
+<script>
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+        popup.classList.add("open-popup")
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup")
+    }
+</script>
+</body>
+</html>
