@@ -65,6 +65,10 @@
     margin-top: 150px;
 }
 
+.wrapper .pannel p {
+    margin-top: 3px;
+}
+
 .wrapper h3 {
     margin-top: 50px;
 }
@@ -101,7 +105,6 @@
 }
 
 .pannel {
-    padding: 5vh;
     background-color: white;
     overflow: hidden;
     background-color: #f1f7f5;
