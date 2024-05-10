@@ -2,10 +2,8 @@
 
 /* Reset styles */
 * {
-    margin: 0;
+    margin: auto;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins' sans-serif; /* Ensures uniformity across elements */
 }
 
 /* General body styles */
@@ -28,8 +26,7 @@ html, body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
-    background: black;
+    background: rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,11 +55,9 @@ html, body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-73%, -26%);
     width: 1200px;
     height: 800px;
-    background: #4db6ac;
-    box-shadow: 0 30px 50px #4db6ac;
     flex-grow: 1;
 }
 
@@ -118,25 +113,25 @@ html, body{
     top: 0;
     left: 0;
     transform: translate(0,0);
-    border-radius: 0;
-    width: 100%;
-    height: 100%;
+    border-radius: 2%;
+    width: 110%;
+    height: 80%;
 }
 
 .slide .item:nth-child(3){
-    left: 50%;
+    left: 49%;
 }
 
 .slide .item:nth-child(4){
-    left: calc(50% + 220px);
+    left: calc(49% + 220px);
 }
 
 .slide .item:nth-child(5){
-    left: calc(50% + 440px);
+    left: calc(49% + 440px);
 }
 
 .slide .item:nth-child(n + 6){
-    left: calc(50% + 660px);
+    left: calc(49% + 660px);
     opacity: 0;
 }
 
