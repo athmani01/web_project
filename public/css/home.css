@@ -25,6 +25,19 @@ body{
     z-index: 100;
 }
 
+.footer {
+width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.footer p{
+    color: black;
+}
+
 .logo {
     display: block;
     width: 100px;

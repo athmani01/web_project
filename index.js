@@ -53,7 +53,7 @@ app.get('/faq', (req, res) => {
 });
 
 app.get('/contact', (req, res) => {
-    res.render('contact', {title: "Contact Us"});
+    res.render('contact', {title: "Contact"});
 });
 
 app.post('/submit-form', (req, res) => {

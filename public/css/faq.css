@@ -24,6 +24,16 @@
     position: absolute; 
 }
 
+.footer {
+    width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+
 /* Logo styling */
 .logo {
     display: block;
@@ -67,15 +77,15 @@
 
 .wrapper .pannel p {
     margin-top: 3px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wrapper h3 {
     margin-top: 50px;
-}
-
-.wrapper  h3 {
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 0.2vh; 
 }
+
 
 /* Accordion component styles */
 .accordion {
@@ -119,7 +129,6 @@
 }
 
 .faq {
-    border: 1px solid rgba(0, 0, 0, 0.2);
     margin: 10px 0;
 }
 
