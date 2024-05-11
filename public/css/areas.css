@@ -273,9 +273,9 @@ footer {
 }
 
 .footer-distributed {
+    position: fixed;
     background-color: #b3e0e3;
     box-sizing: border-box;
-    width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
     padding: 50px 50px 60px 50px;
