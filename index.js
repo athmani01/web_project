@@ -56,6 +56,9 @@ app.get('/contact', (req, res) => {
     res.render('contact', {title: "Contact"});
 });
 
+app.get('/minigame', (req, res) => {
+    res.render('minigame', {title: "Mini-Game"});
+});
 app.post('/submit-form', (req, res) => {
     const { name, email, message } = req.body;
     const sql = `INSERT INTO messages (name, email, message) VALUES (?, ?, ?)`;

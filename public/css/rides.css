@@ -1,17 +1,70 @@
 /* Unique styles for the Rides/Attractions page */
 
-.rides-attractions h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 2rem;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
 }
 
-.rides-attractions ul {
-    list-style-type: disc;
-    padding-left: 2rem;
-    text-align: center;
+body {
+    background-color: #b3e0e3; /* Soft pastel green background */
+    color: #333; /* Soft dark grey text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.rides-attractions ul li {
-    margin-bottom: 0.5rem;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.footer {
+width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.footer p{
+    color: black;
+}
+
+.logo {
+    display: block;
+    width: 100px;
+    height: 100px; 
+    background: url('/img/logo.jpg') no-repeat center center;
+    background-size: cover; 
+    border-radius: 50%; 
+    text-indent: -9999px; 
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #00796b;
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 35px;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #004d40;
 }

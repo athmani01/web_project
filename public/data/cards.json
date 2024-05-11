@@ -1,0 +1,26 @@
+[
+    {
+        "image": "./img/cook.png",
+        "name": "cook"
+    },
+    {
+        "image": "./img/fire.png",
+        "name": "fire-fighter"
+    },
+    {
+        "image": "./img/pirate.png",
+        "name": "pirate"
+    },
+    {
+        "image": "./img/sale.png",
+        "name": "sale"
+    },
+    {
+        "image": "./img/super.png",
+        "name": "super"
+    },
+    {
+        "image": "./img/wizard.png",
+        "name": "wizad"
+    }
+]
