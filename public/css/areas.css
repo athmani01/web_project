@@ -57,12 +57,13 @@ html, body{
 /* Container styles for centering content */
 .container {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-73%, -26%);
     width: 1200px;
     height: 800px;
     flex-grow: 1;
+    margin-bottom: 40vh; /* Ajoute de l'espace en bas du contenu principal pour éviter que le footer ne soit collé */
 }
 
 
@@ -258,10 +259,6 @@ html, body{
 
 /* The footer is fixed to the bottom of the page */
 
-footer {
-    position: fixed;
-    bottom: 0;
-}
 
 @media (max-height:800px) {
     footer {
@@ -273,13 +270,13 @@ footer {
 }
 
 .footer-distributed {
-    position: fixed;
+    height: 35%;
     background-color: #b3e0e3;
     box-sizing: border-box;
     text-align: left;
     font: bold 16px sans-serif;
-    padding: 50px 50px 60px 50px;
-    margin-top: 80px;
+    padding: auto;
+    margin-top: 135vh;
 }
 
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
