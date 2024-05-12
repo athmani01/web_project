@@ -60,6 +60,7 @@ h1 {
     font-weight: 100;
     font-size: 20px;
     margin-top: 18vh;
+    font-weight: bold;
 }
 
 .actions {
@@ -128,7 +129,9 @@ h1 {
 }
 
 body p {
-    font-size: large;
+    font-weight: 700;
+    font-size: larger;
+    margin-top: 2vh;
 }
 
 .btn {
@@ -140,6 +143,7 @@ body p {
     color: white;
     border-radius: 8px;
     border:  solid #fff;
+    margin-top: 2vh;
 }
 
 .btn:hover{

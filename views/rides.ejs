@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title><%= title %></title>
     <link rel="stylesheet" href="/css/rides.css">
 </head>
 <body>
-
     <header class="header">
-        <a href="../img/logo.jpg" class="logo">Your Logo</a>
+        <div href="/img/logo.jpg" class="logo"></div>
         <div class="navbar">
             <a href="/">Home</a>
             <a href="/areas">Areas</a>
@@ -19,67 +21,128 @@
             <a href="/minigame">Mini-Game</a>
         </div>
     </header>
-
-    <h1>Memory Cards</h1>
-    <div class="grid-container"></div>
-    <p>Score : <span class="score"></span></p>
-    <div class="actions">
-        <button onclick="restart()">Restart</button>
+    <div class="container">
+        <div class="slide">
+            <div class="item" style="background-image: url(/img/jungle.jpg);">
+                <div class="content">
+                    <div class="name">Croco Falls</div>
+                    <div class="des">Explore the lush, verdant jungles of Croco 
+                        Falls where adventure awaits at every turn. Listen to the 
+                        cascading waterfalls as you navigate through this vibrant 
+                        and mysterious habitat, home to our spectacular crocodile 
+                        inhabitants.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/img/swamp.jpg);">
+                <div class="content">
+                    <div class="name">Croco Swamp</div>
+                    <div class="des">Venture into the depths of Croco Swamp, 
+                        where the air is thick with mystery. This eerie yet 
+                        fascinating swamp environment offers visitors a chance 
+                        to see crocodiles in their natural marshy home.</div>
+                        <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/img/museum.png);">
+                <div class="content">
+                    <div class="name">Croco Show</div>
+                    <div class="des">Don't miss our Croco Show, a thrilling educational 
+                        experience where you learn about the life of crocodiles. Watch live 
+                        feeding sessions and learn from our experts about these magnificent 
+                        creatures.</div>
+                        <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/img/swim.jpg);">
+                <div class="content">
+                    <div class="name">Croco dive</div>
+                    <div class="des">Get up close and personal in the Croco Dive. 
+                        Dive into our safe and secure underwater viewing tunnels 
+                        that give you a crocodile-eye view of aquatic life.</div>
+                        <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/img/cocodrilo-park.jpg);">
+                <div class="content">
+                    <div class="name">Croco area</div>
+                    <div class="des">Our Croco Area offers a wide, open space where you can 
+                        relax and watch crocodiles lounging in their habitats. Ideal for family 
+                        picnics and educational trips to understand these ancient predators.</div>
+                        <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/img/museums.png);">
+                <div class="content">
+                    <div class="name">Croco Museum</div>
+                    <div class="des">Visit the Croco Museum to discover the 
+                        fascinating history and science of crocodiles. 
+                        Featuring fossils, interactive exhibits, and much more, 
+                        it's perfect for curious minds of all ages.</div>
+                        <button>See More</button>
+                </div>
+            </div>
+        </div>
+        <div class="buttonn">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
     </div>
 
-<footer class="footer-distributed">
+    <footer class="footer-distributed">
 
-    <div class="footer-left">
-        <h3>Croco<span>-Island</span></h3>
-
-        <p class="footer-links">
-            <a href="/">Home</a>
-            |
-            <a href="/areas">Areas</a>
-            |
-            <a href="/rides">Rides</a>
-            |
-            <a href="/faq">FAQ</a>
-            |
-            <a href="/contact">Contact Us</a>
-            |
-            <a href="/minigame">Mini-Game</a>
-        </p>
-
-        <p class="footer-company-name">Copyright © 2024 <strong>Croco-Island</strong> All rights reserved</p>
-    </div>
-
-    <div class="footer-center">
-        <div>
-            <i class="fa-solid fa-location-pin"></i>
-            <p><span>Southampton</span>
-                Hampshire</p>
+        <div class="footer-left">
+            <h3>Croco<span>-Island</span></h3>
+    
+            <p class="footer-links">
+                <a href="/">Home</a>
+                |
+                <a href="/areas">Areas</a>
+                |
+                <a href="/rides">Rides</a>
+                |
+                <a href="/faq">FAQ</a>
+                |
+                <a href="/contact">Contact Us</a>
+                |
+                <a href="/minigame">Mini-Game</a>
+            </p>
+    
+            <p class="footer-company-name">Copyright © 2024 <strong>Croco-Island</strong> All rights reserved</p>
         </div>
+    
+        <div class="footer-center">
+            <div>
+                <i class="fa-solid fa-location-pin"></i>
+                <p><span>Southampton</span>
+                    Hampshire</p>
+            </div>
+    
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <p>+44 77**97**25</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <p><a href="mailto:sagar00001.co@gmail.com">Crocoisland@co.ac.uk</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About Us</span>
+                <strong>Croco-Island</strong> Is a marvelous world filled with activities and 
+                fun lounges to spot corodiles with numerous rides for kids and adults
+                to experience the corodile wilderness 
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+<script src="/js/rides.js"></script>
 
-        <div>
-            <i class="fa-solid fa-phone"></i>
-            <p>+44 77**97**25</p>
-        </div>
-        <div>
-            <i class="fa-solid fa-envelope"></i>
-            <p><a href="mailto:sagar00001.co@gmail.com">Crocoisland@co.ac.uk</a></p>
-        </div>
-    </div>
-    <div class="footer-right">
-        <p class="footer-company-about">
-            <span>About Us</span>
-            <strong>Croco-Island</strong> Is a marvelous world filled with activities and 
-            fun lounges to spot corodiles with numerous rides for kids and adults
-            to experience the corodile wilderness 
-        </p>
-        <div class="footer-icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-    </div>
-</footer>
-<script src="/js/minigame.js"></script>
 </body>
 </html>

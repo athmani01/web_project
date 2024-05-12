@@ -10,13 +10,17 @@
     font-family: "Roboto" sans-serif; 
 }
 
+body {
+    background-color: #b3e0e3;
+}
+
 /* Header styling */
 .header {
     top: 0;
     left: 0;
     width: 100%;
     padding: 2vh 10vw; 
-    background: #b3e0e3; 
+    background: rgba(255, 255, 255, 0.5); 
     display: flex;
     justify-content: space-between;
     align-items: center;
