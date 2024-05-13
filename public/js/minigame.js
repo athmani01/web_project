@@ -1,5 +1,5 @@
 const gridContainer = document.querySelector(".grid-container");
-let cards = []; // Initialize the cards array
+let cards = []; 
 let firstCard, secondCard;
 let lockBoard = false;
 let score = 0;
@@ -9,7 +9,7 @@ document.querySelector(".score").textContent = score;
 fetch("/data/cards.json")
     .then(res => res.json())
     .then(data => {
-        cards = [...data, ...data]; // Duplicate the array for matching game
+        cards = [...data, ...data]; 
         shuffleCards();
         generateCards();
     });
@@ -26,7 +26,7 @@ function shuffleCards() {
 }
 
 function generateCards() {
-    gridContainer.innerHTML = ""; // Clear existing cards if any
+    gridContainer.innerHTML = ""; 
     cards.forEach(card => {
         const cardElement = document.createElement("div");
         cardElement.classList.add("card");

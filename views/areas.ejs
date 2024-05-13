@@ -11,15 +11,10 @@
 </head>
 <body>
     <header class="header">
-        <div href="/img/logo.jpg" class="logo"></div>
-        <div class="navbar">
-            <a href="/">Home</a>
-            <a href="/areas">Areas</a>
-            <a href="/rides">Rides</a>
-            <a href="/faq">FAQ</a>
-            <a href="/contact">Contact Us</a>
-            <a href="/minigame">Mini-Game</a>
-        </div>
+        <a href="/" class="logo">
+            <img src="/img/logo.jpg" alt="Croco-Island Logo" style="width: 100px; height: 100px; border-radius: 50%;">
+        </a>
+        <%- include('particles/nav.ejs') %>
     </header>
     <div class="container">
         <div class="slide">
@@ -89,59 +84,7 @@
         </div>
     </div>
 
-    <footer class="footer-distributed">
-
-        <div class="footer-left">
-            <h3>Croco<span>-Island</span></h3>
-    
-            <p class="footer-links">
-                <a href="/">Home</a>
-                |
-                <a href="/areas">Areas</a>
-                |
-                <a href="/rides">Rides</a>
-                |
-                <a href="/faq">FAQ</a>
-                |
-                <a href="/contact">Contact Us</a>
-                |
-                <a href="/minigame">Mini-Game</a>
-            </p>
-    
-            <p class="footer-company-name">Copyright © 2024 <strong>Croco-Island</strong> All rights reserved</p>
-        </div>
-    
-        <div class="footer-center">
-            <div>
-                <i class="fa-solid fa-location-pin"></i>
-                <p><span>Southampton</span>
-                    Hampshire</p>
-            </div>
-    
-            <div>
-                <i class="fa-solid fa-phone"></i>
-                <p>+44 77**97**25</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-envelope"></i>
-                <p><a href="mailto:sagar00001.co@gmail.com">Crocoisland@co.ac.uk</a></p>
-            </div>
-        </div>
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About Us</span>
-                <strong>Croco-Island</strong> Is a marvelous world filled with activities and 
-                fun lounges to spot corodiles with numerous rides for kids and adults
-                to experience the corodile wilderness 
-            </p>
-            <div class="footer-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-        </div>
-    </footer>
+<%- include('particles/footer.ejs') %>
 <script src="/js/areas.js"></script>
 
 </body>

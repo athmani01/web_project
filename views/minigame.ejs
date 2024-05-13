@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/minigame.css">
 </head>
 <body>
 
     <header class="header">
-        <a href="../img/logo.jpg" class="logo">Your Logo</a>
-        <div class="navbar">
-            <a href="/">Home</a>
-            <a href="/areas">Areas</a>
-            <a href="/rides">Rides</a>
-            <a href="/faq">FAQ</a>
-            <a href="/contact">Contact Us</a>
-            <a href="/minigame">Mini-Game</a>
-        </div>
+        <a href="/" class="logo">
+            <img src="/img/logo.jpg" alt="Croco-Island Logo" style="width: 100px; height: 100px; border-radius: 50%;">
+        </a>
+        <%- include('particles/nav.ejs') %>
     </header>
 
     <h1>Memory Cards</h1>
@@ -27,60 +25,7 @@
     <div class="actions">
         <button class="btn" onclick="restart()">Restart</button>
     </div>
-
-    <footer class="footer-distributed">
-
-        <div class="footer-left">
-            <h3>Croco<span>-Island</span></h3>
-    
-            <p class="footer-links">
-                <a href="/">Home</a>
-                |
-                <a href="/areas">Areas</a>
-                |
-                <a href="/rides">Rides</a>
-                |
-                <a href="/faq">FAQ</a>
-                |
-                <a href="/contact">Contact Us</a>
-                |
-                <a href="/minigame">Mini-Game</a>
-            </p>
-    
-            <p class="footer-company-name">Copyright © 2024 <strong>Croco-Island</strong> All rights reserved</p>
-        </div>
-    
-        <div class="footer-center">
-            <div>
-                <i class="fa-solid fa-location-pin"></i>
-                <p><span>Southampton</span>
-                    Hampshire</p>
-            </div>
-    
-            <div>
-                <i class="fa-solid fa-phone"></i>
-                <p>+44 77**97**25</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-envelope"></i>
-                <p><a href="mailto:sagar00001.co@gmail.com">Crocoisland@co.ac.uk</a></p>
-            </div>
-        </div>
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About Us</span>
-                <strong>Croco-Island</strong> Is a marvelous world filled with activities and 
-                fun lounges to spot corodiles with numerous rides for kids and adults
-                to experience the corodile wilderness 
-            </p>
-            <div class="footer-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-        </div>
-    </footer>
+<%- include('particles/footer.ejs') %>
 <script src="/js/minigame.js"></script>
 </body>
 </html>

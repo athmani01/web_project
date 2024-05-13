@@ -1,8 +1,7 @@
-/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-/* Universal base styles */
+
 * {
     padding: 0;
     margin: 0;
@@ -14,7 +13,7 @@ body {
     background-color: #b3e0e3;
 }
 
-/* Header styling */
+
 .header {
     top: 0;
     left: 0;
@@ -29,7 +28,7 @@ body {
 }
 
 
-/* Logo styling */
+
 .logo {
     display: block;
     width: 12vh; 
@@ -40,7 +39,7 @@ body {
     text-indent: -9999px; 
 }
 
-/* Navigation link styles */
+
 .navbar a {
     font-size: 2.25vh; 
     color: #00796b; 
@@ -82,7 +81,7 @@ body {
 }
 
 
-/* Accordion component styles */
+
 .accordion {
     background-color: white; 
     color: rgba(0, 0, 0, 0.8);
@@ -131,7 +130,7 @@ body {
     border: none;
 }
 
-/* The footer is fixed to the bottom of the page */
+
 
 footer {
     position: fixed;
@@ -162,7 +161,7 @@ footer {
     vertical-align: top;
 }
 
-/* Footer left */
+
 
 .footer-distributed .footer-left {
     width: 30%;
@@ -179,7 +178,7 @@ footer {
     color: cornflowerblue;
 }
 
-/* Footer links */
+
 
 .footer-distributed .footer-links {
     color: #ffffff;
@@ -200,7 +199,7 @@ footer {
     margin: 0;
 }
 
-/* Footer Center */
+
 
 .footer-distributed .footer-center {
     width: 35%;
@@ -208,6 +207,7 @@ footer {
 
 .footer-distributed .footer-center i {
     background-color: transparent;
+    color: #fff;
     font-size: 25px;
     width: 38px;
     height: 38px;
@@ -243,7 +243,7 @@ footer {
     ;
 }
 
-/* Footer Right */
+
 
 .footer-distributed .footer-right {
     width: 30%;

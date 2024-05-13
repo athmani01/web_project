@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-/* Reset styles */
+
 * {
     margin: auto;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General body styles */
+
 body {
-    background-color: #b3e0e3; /* Soft pastel green background */
-    color: #333; /* Soft dark grey text */
+    background-color: #b3e0e3; 
+    color: #333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -24,7 +24,7 @@ html, body{
     flex-direction: column;
 }
 
-/* Header styles */
+
 .header {
     position: fixed;
     top: 0;
@@ -38,7 +38,7 @@ html, body{
     z-index: 100;
 }
 
-/* Navigation styles */
+
 .navbar a {
     font-size: 18px;
     color: #00796b;
@@ -54,7 +54,7 @@ html, body{
     color: #004d40;
 }
 
-/* Container styles for centering content */
+
 .container {
     position: absolute;
     top: 60%;
@@ -63,11 +63,11 @@ html, body{
     width: 1200px;
     height: 800px;
     flex-grow: 1;
-    margin-bottom: 40vh; /* Ajoute de l'espace en bas du contenu principal pour éviter que le footer ne soit collé */
+    margin-bottom: 40vh; 
 }
 
 
-/* Logo styles */
+
 .logo {
     width: 100px;
     height: 100px;
@@ -125,20 +125,6 @@ html, body{
     opacity: 0;
 }
 
-.slide .item:nth-child(4){
-    left: calc(49% + 220px);
-    opacity: 0;
-}
-
-.slide .item:nth-child(5){
-    left: calc(49% + 440px);
-    opacity: 0;
-}
-
-.slide .item:nth-child(n + 6){
-    left: calc(49% + 660px);
-    opacity: 0;
-}
 
 .item .content{
     position: absolute;
@@ -257,7 +243,7 @@ html, body{
     }
 }
 
-/* The footer is fixed to the bottom of the page */
+
 
 
 @media (max-height:800px) {
@@ -284,7 +270,7 @@ html, body{
     vertical-align: top;
 }
 
-/* Footer left */
+
 
 .footer-distributed .footer-left {
     width: 30%;
@@ -301,7 +287,7 @@ html, body{
     color: cornflowerblue;
 }
 
-/* Footer links */
+
 
 .footer-distributed .footer-links {
     color: #ffffff;
@@ -322,7 +308,7 @@ html, body{
     margin: 0;
 }
 
-/* Footer Center */
+
 
 .footer-distributed .footer-center {
     width: 35%;
@@ -330,6 +316,7 @@ html, body{
 
 .footer-distributed .footer-center i {
     background-color: transparent;
+    color: #fff;
     font-size: 25px;
     width: 38px;
     height: 38px;
@@ -365,7 +352,7 @@ html, body{
     ;
 }
 
-/* Footer Right */
+
 
 .footer-distributed .footer-right {
     width: 30%;

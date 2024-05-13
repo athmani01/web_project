@@ -18,11 +18,11 @@ let popup = document.getElementById("confirmationPopup");
         })
         .then(response => response.text())
         .then(data => {
-            console.log(data); // Log response from server
-            openPopup(); // Open popup on successful data submission
+            console.log(data); 
+            openPopup(); 
         })
         .catch((error) => {
             console.error('Error:', error);
-            alert('Error sending message'); // Fallback error handling
+            alert('Error sending message'); 
         });
     }

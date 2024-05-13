@@ -1,24 +1,24 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const sqlite3 = require('sqlite3').verbose();
-const path = require('path');  // Added to correctly handle paths
+const path = require('path');  
 const app = express();
 const port = 5000;
 
 // Middleware for body parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
-app.use('/css', express.static(path.join(__dirname, 'public/css')));  // Corrected path
+app.use('/css', express.static(path.join(__dirname, 'public/css'))); 
 
 // Set view engine to EJS
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));  // Use path.join for paths
+app.set('views', path.join(__dirname, 'views'));  
 
 // Database setup
 const db = new sqlite3.Database('./database.sqlite', sqlite3.OPEN_READWRITE | sqlite3.OPEN_CREATE, (err) => {
     if (err) {
         console.error("Failed to connect to the database:", err.message);
-        process.exit(1);  // Exit if the database connection fails
+        process.exit(1);  
     }
     console.log('Connected to the SQLite database.');
     db.run(`CREATE TABLE IF NOT EXISTS messages (

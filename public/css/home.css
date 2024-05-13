@@ -30,13 +30,29 @@ body{
 
 .logo {
     display: block;
-    width: 100px;
+    width: 100px;  
     height: 100px; 
     background: url('/img/logo.jpg') no-repeat center center;
     background-size: cover; 
     border-radius: 50%; 
     text-indent: -9999px; 
 }
+
+
+@media (max-width: 768px) {
+    .logo {
+        width: 80px; 
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 60px;  
+        height: 60px;
+    }
+}
+
 
 .navbar a {
     font-size: 18px;
@@ -166,16 +182,16 @@ body{
     color: #333;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s, opacity 0.4s;
-    opacity: 0; /* Popup is fully transparent initially */
-    pointer-events: none; /* Prevents all interactions when popup is hidden */
+    opacity: 0; 
+    pointer-events: none; 
 }
 
 .open-popup{
     visibility: visible;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
-    opacity: 1; /* Fully visible when open */
-    pointer-events: auto; /* Allows interaction */
+    opacity: 1;
+    pointer-events: auto; 
 }
 
 .popup img {
@@ -205,7 +221,7 @@ body{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* The footer is fixed to the bottom of the page */
+
 
 footer {
     position: fixed;
@@ -236,7 +252,7 @@ footer {
     vertical-align: top;
 }
 
-/* Footer left */
+
 
 .footer-distributed .footer-left {
     width: 30%;
@@ -253,7 +269,7 @@ footer {
     color: cornflowerblue;
 }
 
-/* Footer links */
+
 
 .footer-distributed .footer-links {
     color: #ffffff;
@@ -274,7 +290,7 @@ footer {
     margin: 0;
 }
 
-/* Footer Center */
+
 
 .footer-distributed .footer-center {
     width: 35%;
@@ -282,6 +298,7 @@ footer {
 
 .footer-distributed .footer-center i {
     background-color: transparent;
+    color: #fff;
     font-size: 25px;
     width: 38px;
     height: 38px;
@@ -317,7 +334,7 @@ footer {
     ;
 }
 
-/* Footer Right */
+
 
 .footer-distributed .footer-right {
     width: 30%;
