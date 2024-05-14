@@ -24,12 +24,24 @@
         <div class="btn-box">
             <a href="#" role="button" onclick="openPopup(); return false;">Book Now</a>
             <a href="#" role="button">Buy ticket</a>
+            <a href="#" role="button" onclick="openEventsPopup(); return false;">Events</a>
         </div>
         <div class="popup" id="popup">
             <img src="/img/404-tick.png" alt="Confirmation Tick">
             <h2>Thank you!</h2>
             <p>Your booking has been successful</p>
             <button type="button" onclick="closePopup()">OK</button>
+        </div>
+        <div class="popup" id="eventspopup">
+            <h2>Events</h2>
+            <p>Past Events:</p>
+                <li><i class="fa-solid fa-candy-cane"></i>Croco-christmas: 25/12/2023</li>
+                <li><i class="fa-solid fa-ghost"></i>Croco-Hallowen: 31/10/2023</li>
+            <p>Current Event:</p>
+                <li><i class="fa-solid fa-forward"></i><a href="/rides">Croco-Drop : Enjoy the scary ride</a></li>
+            <p>Upcoming Event:</p>
+                <li><i class="fa-solid fa-umbrella-beach"></i>Croco-Summer: 30/06/2024</li>
+            <button type="button" onclick="closeEventsPopup()">Close</button>
         </div>
     </div>
 </section>
@@ -43,6 +55,14 @@
     }
     function closePopup() {
         popup.classList.remove("open-popup");
+    }
+
+    let eventspopup = document.getElementById("eventspopup")
+    function openEventsPopup() {
+        eventspopup.classList.add("open-popup");
+    }
+    function closeEventsPopup() {
+        eventspopup.classList.remove("open-popup");
     }
 </script>
 </body>
