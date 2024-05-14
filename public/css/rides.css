@@ -69,11 +69,27 @@ html, body{
 
 
 .logo {
+    display: block;
     width: 100px;
     height: 100px;
     background: url('/img/logo.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 50%;
+    text-indent: -9999px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 80px; 
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 60px;  
+        height: 60px;
+    }
 }
 
 .container .slide .item {
